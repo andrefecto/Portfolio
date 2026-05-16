@@ -219,7 +219,7 @@ main {
         padding-left: 1rem;
     }
 
-    main {
+    main.container-fluid {
         margin-left: var(--sidebar-width);
     }
 
