@@ -220,6 +220,12 @@ main {
     }
 
     main.container-fluid {
+        /* .container-fluid is width: 100%; combined with margin-left that
+           overflows the viewport by the sidebar width and causes a horizontal
+           scrollbar. Anchor navigation then scrolls horizontally and slides
+           content under the fixed sidebar. width: auto fills only the space
+           remaining beside the sidebar, so there's no overflow. */
+        width: auto;
         margin-left: var(--sidebar-width);
     }
 
